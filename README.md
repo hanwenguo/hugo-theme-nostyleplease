@@ -17,7 +17,7 @@ no-style-please](https://github.com/riggraz/no-style-please/).
 
 ## Installation
 
-Just the same as any other Hugo theme.
+Just the same as any other Hugo theme. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
 
 ## Usage
 

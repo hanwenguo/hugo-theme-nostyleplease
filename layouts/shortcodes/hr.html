@@ -1,0 +1,13 @@
+{{ if .IsNamedParams }}
+    {{ with .Get "text" }}
+    <hr data-content='{{ . }}' />
+    {{ else }}
+    <hr />
+    {{ end }}
+{{ else }}
+    {{ with .Get 0 }}
+    <hr data-content="{{ . }}" />
+    {{ else }}
+    <hr />
+    {{ end }}
+{{ end }}

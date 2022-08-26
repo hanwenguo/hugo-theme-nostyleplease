@@ -1,0 +1,26 @@
+<ul>
+    {{- range $item := .collection -}}
+        <li>
+            {{- with $item.url -}}
+                <a href="{{ $item.url }}">{{ safeHTML $item.title }}</a>
+            {{- else -}}
+                {{ safeHTML $item.title }}
+            {{- end -}}
+        </li>
+
+        {{- if $item.post_list -}}
+            {{ partial "post_list.html" (dict 
+                "context" .
+                "section" $item.post_list.section
+                "limit" $item.post_list.limit
+                "show_more" $item.post_list.show_more
+                "show_more_text" $item.post_list.show_more_text
+                "show_more_url" $item.post_list.show_more_url
+                ) -}}
+        {{- end -}}
+
+        {{- if $item.entries }}
+            {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}
+        {{- end -}}
+    {{- end -}}
+</ul>

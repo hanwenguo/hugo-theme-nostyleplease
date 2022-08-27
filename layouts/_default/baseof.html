@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode }}" class="han-init">
+<html lang="{{ $.Site.LanguageCode }}" class="{{- if $.Site.Params.hasCJKLanguage -}} {{- "han-init" -}} {{- end -}}">
     {{- partial "head.html" . -}}
     <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
         <main class="page-content" aria-label="Content">

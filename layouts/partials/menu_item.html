@@ -8,6 +8,10 @@
             {{- end -}}
         </li>
 
+        {{- if $item.entries }}
+            {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}
+        {{- end -}}
+
         {{- if $item.post_list -}}
             {{ partial "post_list.html" (dict 
                 "context" .
@@ -17,10 +21,6 @@
                 "show_more_text" $item.post_list.show_more_text
                 "show_more_url" $item.post_list.show_more_url
                 ) -}}
-        {{- end -}}
-
-        {{- if $item.entries }}
-            {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}
         {{- end -}}
     {{- end -}}
 </ul>

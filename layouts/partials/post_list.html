@@ -3,7 +3,15 @@
 {{- if .section -}}
     {{- $posts = (where site.RegularPages "Section" .section) -}}
 {{- else -}}
-    {{- $posts = site.RegularPages }}
+    {{- if (eq .context.Kind "taxonomy") -}}
+        {{- $posts = .context.Pages -}}
+    {{- else -}}
+        {{- if (eq .context.Kind "term") -}}
+            {{- $posts = .context.Data.Pages -}}
+	{{- else -}}
+            {{- $posts = site.RegularPages }}
+	{{- end -}}
+    {{- end -}}
 {{- end -}}
 
 {{- $limit_exceeded:= "" -}}

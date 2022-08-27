@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+{{ partial "post_list.html" (dict "context" .)}}
+{{ end }}

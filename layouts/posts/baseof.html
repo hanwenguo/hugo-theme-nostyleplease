@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode }}" class="han-init">
+<html lang="{{ $.Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
         <main class="page-content" aria-label="Content">
@@ -7,7 +7,6 @@
                 {{- block "main" . }}{{- end }}
             </div>
         </main>
-	<script src="https://cdn.jsdelivr.net/npm/han-css@3/dist/han.min.js"></script>
     </body>
     {{- if .Params.custom_js -}}
         {{- range .Params.custom_js -}}

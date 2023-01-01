@@ -18,5 +18,4 @@
   {{ $style := $sass | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" />
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css">
 </head>

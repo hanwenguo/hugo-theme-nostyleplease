@@ -1,9 +1,6 @@
 # no style, please!
 
-<img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/logo.png" width="64" align="left" />A (nearly) no-CSS, fast, minimalist [Hugo](https://gohugo.io/) theme ported from [riggraz
-/
-no-style-please](https://github.com/riggraz/no-style-please/).
-
+<img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/logo.png" width="64" align="left" />A (nearly) no-CSS, fast, minimalist [Hugo](https://gohugo.io/) theme ported from [riggraz/no-style-please](https://github.com/riggraz/no-style-please/).
 
 <img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/images/screenshot-both.png" />
 
@@ -14,10 +11,11 @@ no-style-please](https://github.com/riggraz/no-style-please/).
 * Responsive
 * Content first (typography optimized for maximum readability)
 * RSS feed (using Hugo's embedded RSS template)
+* MathJax support
 
 ## Installation
 
-Just the same as any other Hugo theme. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
+The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
 
 ## Usage
 
@@ -65,6 +63,12 @@ For example, if you have a black and white image it could make sense to invert i
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/Masellum/hugo-theme-nostyleplease. 
+
+## Thanks
+
+Some of the code comes from [wooseopkim/hugo-theme-nostyleplease](https://github.com/wooseopkim/hugo-theme-nostyleplease), a fork of this theme.
+
+Some of the test pages are from [this jekyll theme](https://github.com/huangyz0918/moving).
 
 ## License
 

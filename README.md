@@ -17,6 +17,11 @@
 
 The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
 
+```
+# Add as a submodule
+git submodule add https://github.com/Masellum/hugo-theme-nostyleplease.git themes/nostyleplease
+```
+
 ## Usage
 
 You can edit `config.toml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `config.toml` contains some comments to help you understand what each field does.

@@ -23,6 +23,10 @@
     noHl = false
     style = 'rrt'
     tabWidth = 4
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
 
 [params]
   [params.theme_config]

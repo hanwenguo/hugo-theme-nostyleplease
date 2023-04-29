@@ -50,6 +50,10 @@ The `index.md` page should use layout `home`, which is the layout that displays 
 
 Another thing you can do to customize the index page is show the description of your blog between the title and the menu. To do this, just edit `config.toml` and change `params.theme_config.show_description` to `true`.
 
+### Adding table of contents
+
+You can add a table of contents by supplying the `toc: true` param to your post front matter. If you want a border around it you can also set `tocBorder: true`. The toc style behavior is handled by Goldmark and the defaults can be found in the `config.toml` file.
+
 ### Pro tips
 
 #### Dark mode for images

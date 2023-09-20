@@ -1,30 +1,50 @@
 // -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
+@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color) {
+  background-color: $--bg-color;
 
-    &.ioda { filter: invert(0); }
+  color: $--primary-text-color;
+
+  a {
+    color: $--link-color;
+    text-decoration: none;
+
+    &:visited { color: $--visited-link-color; }
+    &:hover { text-decoration: underline; }
   }
+
+  code:not(pre > code) {
+    background-color: $--primary-text-color;
+    color: $--bg-color;
+  }
+
+  figcaption { color: $--secondary-text-color; }
+}
+
+@mixin dark-appearance {
+  @include theme(#212121, #fafafa, #eeeeee, #0071bc, #a359e9);
+}
+
+@mixin light-appearance {
+  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292);
 }
 
 body[a="dark"] { @include dark-appearance; }
+body[a="light"] { @include light-appearance; }
 
 
 @media (prefers-color-scheme: dark) {
   body[a="auto"] { @include dark-appearance; }
 }
-// -------------------------------------------- //
 
-// bg color is also needed in html in order to
-// block body's background propagation
-// see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+@media (prefers-color-scheme: light) {
+  body[a="auto"] { @include light-appearance; }
+}
+
+// -------------------------------------------- //
 
 html { height: 100%; }
 
 body {
-  color: black;
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -79,9 +99,6 @@ table, th, td {
 }
 
 code:not(pre > code) {
-  color: white;
-  background: black; 
-  font-size: 80%;
   padding: 0.1em 0.2em;
   font-size: 90%;
 }

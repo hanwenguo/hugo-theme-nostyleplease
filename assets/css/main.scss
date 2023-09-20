@@ -78,7 +78,7 @@ table, th, td {
   padding: 0.4rem;
 }
 
-code {
+code:not(pre > code) {
   color: white;
   background: black; 
   font-size: 80%;

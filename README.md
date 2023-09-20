@@ -19,7 +19,7 @@ The easiest way is to clone this repo (or add as a submodule) to themes/nostylep
 
 ## Usage
 
-You can edit `config.toml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `config.toml` contains some comments to help you understand what each field does.
+You can edit `config.toml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `config.toml` contains some comments to help you understand what each field does. Note that the `config.toml` under root directory of your hugo site will completely override the one in the theme directory, so copy the attributes you want to keep or edit from the theme's `config.toml` to your site's `config.toml`.
 
 ### Customize the menu
 

@@ -54,6 +54,10 @@ Another thing you can do to customize the index page is show the description of 
 
 You can add a table of contents by supplying the `toc: true` param to your post front matter. If you want a border around it you can also set `tocBorder: true`. The toc style behavior is handled by Goldmark and the defaults can be found in the `config.toml` file.
 
+### Posts list group by date in descending order.
+
+just edit `config.toml` and change `params.theme_config.isListGroupByDate` to `true`.
+
 ### Pro tips
 
 #### Dark mode for images

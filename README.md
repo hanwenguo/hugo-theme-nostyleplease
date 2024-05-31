@@ -15,7 +15,7 @@
 
 ## Installation
 
-The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
+The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'hugo-theme-nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
 
 ## Usage
 

@@ -6,20 +6,21 @@
 
 ## Features
 
-* Fast (**1kb of CSS!**)
-* Light, dark and auto modes
+* Fast (**5kb of CSS!**)
+* Light, dark, clean, retro and auto modes. It's easy to modify it by yourself.
 * Responsive
 * Content first (typography optimized for maximum readability)
 * RSS feed (using Hugo's embedded RSS template)
 * MathJax support
+* HTML <details> support
 
 ## Installation
 
-The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` to build them.
+The easiest way is to clone this repo (or add as a submodule) to themes/nostyleplease then append `theme = 'nostyleplease'` as a newline to config.toml. Pages shipped with theme as examples have `draft: true` in their frontmatters, use `--buildDrafts` or just `-D` to build them.
 
 ## Usage
 
-You can edit `config.toml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `config.toml` contains some comments to help you understand what each field does. Note that the `config.toml` under root directory of your hugo site will completely override the one in the theme directory, so copy the attributes you want to keep or edit from the theme's `config.toml` to your site's `config.toml`.
+You can edit `config.toml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark, clean, retro or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `config.toml` contains some comments to help you understand what each field does. Note that the `config.toml` under root directory of your hugo site will completely override the one in the theme directory, so copy the attributes you want to keep or edit from the theme's `config.toml` to your site's `config.toml`.
 
 ### Customize the menu
 
@@ -66,7 +67,7 @@ For example, if you have a black and white image it could make sense to invert i
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Masellum/hugo-theme-nostyleplease. 
+Bug reports and pull requests are welcome on GitHub at https://github.com/Masellum/hugo-theme-nostyleplease.
 
 ## Thanks
 

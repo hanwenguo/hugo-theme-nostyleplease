@@ -30,6 +30,7 @@
 
 [params]
   [params.theme_config]
-    appearance = "auto"
-    back_home_text = ".."
+    appearance = "clean"
+    back_home_text = ".. go back home"
     date_format = "2006-01-02"
+    show_description = true

@@ -7,7 +7,7 @@
 ## Features
 
 * Fast (**under 3kb of CSS!**)
-* Light, dark, clean, retro color schemes and auto mode adapting to the browser/system
+* Light, dark and auto modes
 * Responsive
 * Content first (typography optimized for maximum readability)
 * RSS feed (using Hugo's embedded RSS template)

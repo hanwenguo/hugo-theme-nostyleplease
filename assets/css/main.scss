@@ -11,8 +11,13 @@
     &:hover { text-decoration: underline; }
   }
 
+  details {
+    border: thin solid $--primary-text-color;
+    padding: 1rem;
+  }
+
   details summary {
-    color: $--link-color;
+    color: $--primary-text-color;
     text-decoration: none;
   }
 
@@ -31,7 +36,7 @@
 
    }
   .toc {
-    border: thin solid $--link-color;
+    border: thin solid $--primary-text-color;
     padding: 1rem;
   }
 
@@ -45,14 +50,6 @@
 
 @mixin light-appearance {
   @include theme(#ffffff, #212121, #666666, #1e70bf, #921292, #FFFF00);
-}
-
-@mixin clean-appearance {
-  @include theme(#fbfbfb, #212121, #dfedff, #0066ff, #0066ff, #C3D3FF);
-}
-
-@mixin retro-appearance {
-  @include theme(#000a1a, #c4ffc6, #161616, #c0ff00, #c0ff00, #007A35);
 }
 
 body[a="dark"] { @include dark-appearance; }

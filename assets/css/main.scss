@@ -1,5 +1,5 @@
 // -------------- THEME SWITCHER -------------- //
-@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color) {
+@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight) {
   background-color: $--bg-color;
 
   color: $--primary-text-color;
@@ -7,9 +7,18 @@
   a {
     color: $--link-color;
     text-decoration: none;
-
     &:visited { color: $--visited-link-color; }
     &:hover { text-decoration: underline; }
+  }
+
+  details {
+    border: thin solid $--primary-text-color;
+    padding: 1rem;
+  }
+
+  details summary {
+    color: $--primary-text-color;
+    text-decoration: none;
   }
 
   code:not(pre > code) {
@@ -17,20 +26,36 @@
     color: $--bg-color;
   }
 
+  *:target {
+    background: $--highlight;
+    color: $--primary-text-color;
+   }
+
+   table, th, td {
+     border: thin solid $--primary-text-color;
+
+   }
+  .toc {
+    border: thin solid $--primary-text-color;
+    padding: 1rem;
+  }
+
   figcaption { color: $--secondary-text-color; }
 }
 
+
 @mixin dark-appearance {
-  @include theme(#212121, #fafafa, #eeeeee, #0071bc, #a359e9);
+  @include theme(#212121, #fafafa, #000000, #0071bc, #a359e9, #FFFF00);
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292);
+  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292, #FFFF00);
 }
 
 body[a="dark"] { @include dark-appearance; }
 body[a="light"] { @include light-appearance; }
-
+body[a="clean"] { @include clean-appearance; }
+body[a="retro"] { @include retro-appearance; }
 
 @media (prefers-color-scheme: dark) {
   body[a="auto"] { @include dark-appearance; }
@@ -55,15 +80,13 @@ body {
 
 .post-meta { text-align: right; }
 
-h2, h3, h4, h5, h6 { margin-top: 3rem; }
+h2, h3, h4, h5, h6 { margin-top: 0.5rem; }
 
 hr { margin: 2rem 0; }
 
 p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
-
-*:target { background: yellow; }
 
 .w {
   max-width: 640px;
@@ -72,7 +95,6 @@ li { margin: 0.4rem 0; }
 }
 
 .toc {
-  border: thin solid black;
   padding: 1rem;
 }
 

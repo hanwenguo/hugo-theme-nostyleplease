@@ -1,17 +1,18 @@
 # no style, please!
 
-<img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/logo.png" width="64" align="left" />A (nearly) no-CSS, fast, minimalist [Hugo](https://gohugo.io/) theme ported from [riggraz/no-style-please](https://github.com/riggraz/no-style-please/).
+<img src="https://raw.githubusercontent.com/hanwenguo/hugo-theme-nostyleplease/main/logo.png" width="64" align="left" />A (nearly) no-CSS, fast, minimalist [Hugo](https://gohugo.io/) theme ported from [riggraz/no-style-please](https://github.com/riggraz/no-style-please/).
 
-<img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/images/screenshot-both.png" />
+<img src="https://raw.githubusercontent.com/hanwenguo/hugo-theme-nostyleplease/main/images/screenshot-both.png" />
 
 ## Features
 
-* Fast (**1kb of CSS!**)
+* Fast (**under 3kb of CSS!**)
 * Light, dark and auto modes
 * Responsive
 * Content first (typography optimized for maximum readability)
 * RSS feed (using Hugo's embedded RSS template)
 * MathJax support
+* Supporting details HTML tag
 
 ## Installation
 
@@ -50,6 +51,7 @@ The `index.md` page should use layout `home`, which is the layout that displays 
 
 Another thing you can do to customize the index page is show the description of your blog between the title and the menu. To do this, just edit `config.toml` and change `params.theme_config.show_description` to `true`.
 
+You can also add footer. Just edit ..nostyleplease/layouts/footer.md.
 ### Adding table of contents
 
 You can add a table of contents by supplying the `toc: true` param to your post front matter. If you want a border around it you can also set `tocBorder: true`. The toc style behavior is handled by Goldmark and the defaults can be found in the `config.toml` file.
@@ -70,7 +72,7 @@ For example, if you have a black and white image it could make sense to invert i
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Masellum/hugo-theme-nostyleplease. 
+Bug reports and pull requests are welcome on GitHub at https://github.com/hanwenguo/hugo-theme-nostyleplease/.
 
 ## Thanks
 

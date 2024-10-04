@@ -54,8 +54,6 @@
 
 body[a="dark"] { @include dark-appearance; }
 body[a="light"] { @include light-appearance; }
-body[a="clean"] { @include clean-appearance; }
-body[a="retro"] { @include retro-appearance; }
 
 @media (prefers-color-scheme: dark) {
   body[a="auto"] { @include dark-appearance; }

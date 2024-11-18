@@ -118,6 +118,13 @@ table, th, td {
   padding: 0.4rem;
 }
 
+code {
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 code:not(pre > code) {
   padding: 0.1em 0.2em;
   font-size: 90%;

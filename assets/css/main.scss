@@ -21,6 +21,12 @@
     text-decoration: none;
   }
 
+  details[open] summary {
+    border-bottom: 1px solid $--primary-text-color;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
   pre {
     background: $--bg-color;
   }

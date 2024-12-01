@@ -83,7 +83,11 @@ body {
   overflow-wrap: break-word;
 }
 
-.post-meta { text-align: right; }
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 h2, h3, h4, h5, h6 { margin-top: 0.5rem; }
 

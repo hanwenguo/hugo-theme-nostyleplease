@@ -1,2 +1,10 @@
-{{ $footerContent := readFile "layouts/footer.md" }}
-{{ $footerContent | markdownify }}
+{{ if site.Params.theme_config.isShowFooter }}
+    {{ with resources.Get "layouts/footer.md" }}
+        {{ .Content | markdownify }}
+    {{ else }}
+        {{ warnf "layouts/footer.md file is not found, fallback to the default copyright" }}
+        <footer class="site-footer">
+            <p>&copy; {{ now.Format "2006" }} {{ site.Title }}</p>
+        </footer>
+    {{ end }}
+{{ end }}

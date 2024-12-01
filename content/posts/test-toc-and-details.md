@@ -1,5 +1,5 @@
 +++
-title = 'Test TOC, deatails and styles'
+title = 'TOC, deatails, styles and video'
 date = 2024-08-18T13:34:54+02:00
 draft = true
 toc = true
@@ -35,3 +35,10 @@ Okey. So if you want to change color-theme you can:
   ```
   you can change it to 2 predefined styles: **light** and **dark**. It can be also set to **auto** and the color scheme will match the user's system style.
 - you can add new style or modify **auto** option, just edit CSS in ../themes/nostyleplease/assets/main.scss :-). It's easy, if you are able to operate Hugo - you can do it.
+
+## Video
+
+you can add video to your post. 
+{{< video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">}}
+ To check how to use this shortcode you need to inspect this post and see it by yourself. It's very easy. Take look at ../themes/nostyleplease/content/posts/test-toc-and-details.md.
+

@@ -21,6 +21,10 @@
     text-decoration: none;
   }
 
+  pre {
+    background: $--bg-color;
+  }
+
   code:not(pre > code) {
     background-color: $--primary-text-color;
     color: $--bg-color;
@@ -31,18 +35,21 @@
     color: $--primary-text-color;
    }
 
-   table, th, td {
-     border: thin solid $--primary-text-color;
+  table, th, td {
+    border: thin solid $--primary-text-color;
+  }
 
-   }
   .toc {
     border: thin solid $--primary-text-color;
     padding: 1rem;
   }
 
   figcaption { color: $--secondary-text-color; }
-}
 
+  blockquote {
+    border: thin solid $--primary-text-color;
+  }
+}
 
 @mixin dark-appearance {
   @include theme(#212121, #fafafa, #000000, #0071bc, #a359e9, #FFFF00);
@@ -105,7 +112,6 @@ hr {
 }
 
 pre {
-  background: black;
   padding: 1em;
   overflow-x: auto; /* Fix pre content overflowing parent without scroll bar */
 }
@@ -113,7 +119,6 @@ pre {
 table { width: 100%; }
 
 table, th, td {
-  border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
 }
@@ -139,7 +144,6 @@ code.has-jax {
 
 blockquote {
   font-style: italic;
-  border: thin solid black;
   padding: 1rem;
 
   p { margin: 0; }

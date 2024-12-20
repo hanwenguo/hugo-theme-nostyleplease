@@ -10,5 +10,7 @@
     {{ end }}
 
     {{ .Content }}
+
+    {{- partial "mermaid.html" . -}}
 </article>
 {{ end }}

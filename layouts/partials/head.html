@@ -19,4 +19,5 @@
   {{ $style := $sass | css.Sass $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}" />
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
+  {{ if .Params.mermaid }} {{ partial "mermaid.html" . }} {{ end }}
 </head>

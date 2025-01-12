@@ -52,11 +52,11 @@
 }
 
 @mixin dark-appearance {
-  @include theme(#212121, #fafafa, #000000, #0071bc, #a359e9, #FFFF00);
+  @include theme(#000000, #ffffff, #000000, #79a8ff, #f78fe7, #2f3849); // modus-vivendi
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292, #FFFF00);
+  @include theme(#ffffff, #000000, #595959, #3548cf, #8f0075, #dae5ec); // modus-operandi
 }
 
 body[a="dark"] { @include dark-appearance; }

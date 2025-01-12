@@ -1,8 +1,9 @@
 {{ if site.Params.theme_config.isShowFooter }}
-    {{ with resources.Get "layouts/footer.md" }}
-        {{ .Content | markdownify }}
+    {{ $footerContent := readFile "layouts/footer.md" }}
+    {{ if and $footerContent (ne $footerContent "") }}
+        {{ $footerContent | markdownify }}
     {{ else }}
-        {{ warnf "layouts/footer.md file is not found, fallback to the default copyright" }}
+        {{ warnf "layouts/footer.md file is not found or empty. Falling back to default footer." }}
         <footer class="site-footer">
             <p>&copy; {{ now.Format "2006" }} {{ site.Title }}</p>
         </footer>
